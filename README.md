@@ -46,7 +46,6 @@ The output data from the API calls will be in the following format:
   }
 ]
 ```
-using the provided API.
 
 ### API Endpoints
 
