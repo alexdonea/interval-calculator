@@ -58,14 +58,6 @@ The API provides the following endpoints for CRUD operations on intervals:
 - `PUT /intervals/{id}`: Update an existing interval.
 - `DELETE /intervals/{id}`: Delete an interval.
 
-### Request Examples
-
-#### Retrieve all intervals
-
-- Endpoint: `GET /intervals`
-- Description: Retrieves all intervals.
-- Example Request:
-
 ### API Authentication
 To make API calls, include the following authentication information in the request headers:
 
