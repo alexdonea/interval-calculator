@@ -83,8 +83,8 @@ public class IntervalService {
            // intervals.sort(Comparator.comparingInt(Interval::getId));
 
             // Compute duration and break time between intervals except first one
-            // If start time is equal to end time, it will always put 0s because it's invalid
-            // Same for break time, it compute always with prev interval.
+            // If start time is equal or greater than the end time, it will always put 0s because it's invalid time range
+            // Same for break time, it compute always with previous interval.
             for (int i = 0; i < intervals.size(); i++) {
                 Interval interval = intervals.get(i);
                     long durationInMillis = interval.getEnd().getTime() - interval.getStart().getTime();

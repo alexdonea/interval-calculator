@@ -1,6 +1,5 @@
 package com.alexdonea.intervalcalculator.controller;
 
-import com.alexdonea.intervalcalculator.errors.BadRequestException;
 import com.alexdonea.intervalcalculator.errors.IntervalNotFoundException;
 import com.alexdonea.intervalcalculator.service.IntervalService;
 import com.alexdonea.intervalcalculator.entity.Interval;
@@ -9,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.text.ParseException;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/intervals")
